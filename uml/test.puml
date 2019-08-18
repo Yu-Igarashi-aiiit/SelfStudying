@@ -1,0 +1,13 @@
+@startuml
+start
+:Initialization;
+if (Some Test) then (true)
+  :Some Activity;
+  :Another Activity;
+else (false)
+  :Something else;
+endif
+->Ending process;
+stop
+
+@enduml
