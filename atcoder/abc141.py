@@ -45,7 +45,7 @@ h = list(map(lambda x:-1*x,a))
 heapq.heapify(h)
 for i in range(m):
     heapq.heapreplace(h,-(-h[0]//2))
-    print(h)
+print(-1*sum(h))
 
 # a=sorted(a,reverse=True)
 # for i in range(m):
