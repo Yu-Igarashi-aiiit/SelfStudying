@@ -20,3 +20,5 @@ for i in range(n-1,0,-1):
 print(maxc)
 
 #d
+n = int(input())
+print(n*(n-1)//2)
