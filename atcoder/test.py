@@ -1,14 +1,47 @@
-import itertools
+	"map int input": {
+		"prefix": "mpi",
+		"body": [
+			"map(int,input().split())"
+		],
+		"description": "map int"
+	}
 
-tmp = [ [ [1,2], [3,4] ], [ [5,6] , [7,8] ], [ [9,10] , [11,12] ] ]
-tmp
+	"list map int": {
+		"prefix": "lmpi",
+		"body": [
+			"list(map(int,input().split()))"
+		],
+		"description": "list map int"
+    }
+    
+    "resolve": {
+		"prefix": "res",
+		"body": [
+			"def resolve():"
+		],
+		"description": "resolve"
+    }
 
-a=list(map(list,zip(*tmp)))
-for i in a:
-    p=list(itertools.chain.from_iterable(i))
-    print(p)
+    "int input": {
+		"prefix": "ii",
+		"body": [
+			"int(input())"
+		],
+		"description": "int input"
+    }
 
-
-for row in tmp:
-    a=list(map(list,zip(*tmp)))
-    print(a)
+    "dfs": {
+		"prefix": "dfs",
+		"body": [
+			"def dfs(A):"
+            "# 数列の長さが N に達したら打ち切り"
+            "if len(A) == N:"
+                "# 処理"
+                "return"
+            "for v in range(M):"
+                "A.append(v)"
+                "dfs(A)"
+                "A.pop()"
+		],
+		"description": "dfs"
+    }
