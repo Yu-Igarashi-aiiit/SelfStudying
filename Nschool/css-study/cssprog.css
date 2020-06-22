@@ -1,0 +1,9 @@
+
+/* ドットからつなげてclass名を指定することで設定したclassのスタイルになる */
+.face {
+    color: red;
+  }
+.back {
+    color: red;
+    opacity : 0.4;
+}
